@@ -5,7 +5,7 @@ Ext.Loader.setConfig({
 });
 
 Ext.require("Ext.data.validations", function(){Ext.data.validations.lengthMessage =  'Поле обязательно к заполнению';});
-Ext.require(["GraceApp.view.MainVp", "GraceApp.store.Urls"]);
+Ext.require(["GraceApp.view.ModuleDB", "GraceApp.store.Urls"]);
 
 // custom Vtype for vtype:'numbers' - after move to separated file...
 var numTest = /[0-9]/i;
@@ -20,11 +20,19 @@ Ext.apply(Ext.form.field.VTypes, {
     numbersMask: /[\d]/i
 });
 
+Ext.ns('GraceApp.store');
+GraceApp.store.Urls = {
+	local: false,
+	url: function(url) {
+		return this.local ? url : 'proxy.jsp?' + url; 
+	}
+};
+
 Ext.application({
     name: 'GraceApp',
     launch: function(){
 
-        Ext.create("GraceApp.view.MainVp").show();
+        Ext.create("GraceApp.view.ModuleDB").show();
     }
     //,controllers: ["Main"]
 });
