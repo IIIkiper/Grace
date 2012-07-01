@@ -79,7 +79,79 @@ Ext.define('GraceApp.model.UnitPassport', {
             useNull: true
         },{
             name: 'unit_code_suppl'
-        }
+        },{
+			name: 'id_status_cy_1',
+			type: 'int'
+		},{
+			name: 'id_status_cy_2',
+			type: 'int'
+		},{
+			name: 'id_status_cy_3',
+			type: 'int'
+		},{
+			name: 'id_status_cy_4',
+			type: 'int'
+		},{
+			name: 'id_status_cy_5',
+			type: 'int'
+		},{
+			name: 'id_status_cy_6',
+			type: 'int'
+		},{
+			name: 'id_status_cy_7',
+			type: 'int'
+		},{
+			name: 'id_status_cy_8',
+			type: 'int'
+		},{
+			name: 'id_status_cy_9',
+			type: 'int'
+		},{
+			name: 'id_status_cy_10',
+			type: 'int'
+		},{
+			name: 'id_status_cy_11',
+			type: 'int'
+		},{
+			name: 'id_status_cy_12',
+			type: 'int'
+		},{
+			name: 'id_status_ny_1',
+			type: 'int'
+		},{
+			name: 'id_status_ny_2',
+			type: 'int'
+		},{
+			name: 'id_status_ny_3',
+			type: 'int'
+		},{
+			name: 'id_status_ny_4',
+			type: 'int'
+		},{
+			name: 'id_status_ny_5',
+			type: 'int'
+		},{
+			name: 'id_status_ny_6',
+			type: 'int'
+		},{
+			name: 'id_status_ny_7',
+			type: 'int'
+		},{
+			name: 'id_status_ny_8',
+			type: 'int'
+		},{
+			name: 'id_status_ny_9',
+			type: 'int'
+		},{
+			name: 'id_status_ny_10',
+			type: 'int'
+		},{
+			name: 'id_status_ny_11',
+			type: 'int'
+		},{
+			name: 'id_status_ny_12',
+			type: 'int'
+		}
     ],
     extend: 'Ext.data.Model'
 

@@ -1,0 +1,31 @@
+Ext.define('GraceApp.model.XlsModel', {
+	extend: 'Ext.data.Model',
+	fields: [
+		{name: 'col1'},
+		{name: 'col2'},
+		{name: 'col3'},
+		{name: 'col4'},
+		{name: 'col5'},
+		{name: 'col6'},		
+		{name: 'col7'},
+		{name: 'col8'},
+		{name: 'col9'},
+		{name: 'col10'},
+		{name: 'col11'},
+		{name: 'col12'},
+		{name: 'col13'},
+		{name: 'col14'},
+		{name: 'col15'},
+		{name: 'col16'},
+		{name: 'col17'},
+		{name: 'col18'},
+		{name: 'col19'},
+		{name: 'col20'},
+		{name: 'col21'},
+		{name: 'col22'},
+		{name: 'col23'},
+		{name: 'col24'},
+		{name: 'col25'},
+		{name: 'col26'}	
+	]
+});

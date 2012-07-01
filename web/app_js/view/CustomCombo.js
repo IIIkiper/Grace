@@ -12,12 +12,11 @@ Ext.define('GraceApp.view.CustomCombo', {
 
     // позволяем очищать значение выпадающего списка
     assertValue: function() {
-        var me = this,
-            value = me.getRawValue();
+        var me = this, value = me.getRawValue();
+        
         if (me.allowBlank && !value) {
             me.clearValue();
-        }
-        else {
+        } else {
             me.callParent();
         }
     }
