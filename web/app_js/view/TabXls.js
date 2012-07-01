@@ -14,7 +14,9 @@ Ext.define('GraceApp.view.TabXls', {
 		
 		var _typeSelector = Ext.create('GraceApp.view.CustomCombo', {
 			allowBlank: false,
-			width: 250,
+			fieldLabel: 'Тип файла',
+			labelWidth: 65,
+			width: 290,
 			store: [
 				[1, 'Загрузка полной АП (обновление)'],
 				[2, 'Загрузка полной АП (добавление)'],
@@ -22,6 +24,7 @@ Ext.define('GraceApp.view.TabXls', {
 				[4, 'Загрузка спец. предложений']
 			]			
 		});
+		_typeSelector.setValue(1);
 		
 		// Grid with .xls/.ods data
 		var _xlsGrid = Ext.create('Ext.grid.Panel', {
@@ -39,6 +42,7 @@ Ext.define('GraceApp.view.TabXls', {
 							console.log('load excel');
 						}
 					}),
+					'|', 
 					_typeSelector
 				]
 			}),

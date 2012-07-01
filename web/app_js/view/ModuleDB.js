@@ -54,7 +54,7 @@ Ext.define('GraceApp.view.ModuleDB', {
                 	Ext.create('GraceApp.view.TabStatus'),
                 	Ext.create('GraceApp.view.TabXls')
                 ]);
-                _tabPanel.setActiveTab(_tabPanel.getComponent(0)); // Set first added tab as active.
+                _tabPanel.setActiveTab(_tabPanel.getComponent(2)); // Set first added tab as active.
             },
             failure: function() {
             	console.log('Fail to load dictionaries');
